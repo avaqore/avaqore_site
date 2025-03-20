@@ -4,7 +4,7 @@ async function getGrokResponse() {
   responseDiv.innerHTML = 'Loading...';
 
   try {
-    const response = await fetch('https://avaqore-backend-r8wfcj5d6-ajayvashs-projects.vercel.app/api/grok', {
+    const response = await fetch('https://avaqore-backend.vercel.app/.app/api/grok', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: prompt })
